@@ -18,7 +18,7 @@ public class HackerCryptoUI extends JFrame {
     private boolean isEncryptMode = true;
     
     // Elite hacker colors
-    private static final Color PURE_BLACK = new Color(0, 0, 0);
+   private static final Color PURE_WHITE = new Color(0, 0, 0);;
     private static final Color DARK_BG = new Color(8, 8, 12);
     private static final Color PANEL_BG = new Color(12, 12, 18);
     private static final Color NEON_GREEN = new Color(0, 255, 65);
@@ -36,7 +36,7 @@ public class HackerCryptoUI extends JFrame {
         setSize(1300, 850);
         setDefaultCloseOperation(EXIT_ON_CLOSE);
         setLocationRelativeTo(null);
-        getContentPane().setBackground(PURE_BLACK);
+        getContentPane().setBackground(PURE_WHITE);
         setUndecorated(false);
         
         // Main animated panel
@@ -347,7 +347,7 @@ public class HackerCryptoUI extends JFrame {
     private JTextField createTerminalField() {
         JTextField field = new JTextField();
         field.setFont(new Font("Consolas", Font.PLAIN, 13));
-        field.setBackground(PURE_BLACK);
+        field.setBackground(PURE_WHITE);
         field.setForeground(TERMINAL_GREEN);
         field.setCaretColor(NEON_GREEN);
         field.setBorder(BorderFactory.createCompoundBorder(
@@ -360,7 +360,7 @@ public class HackerCryptoUI extends JFrame {
     private JTextArea createTerminalArea() {
         JTextArea area = new JTextArea();
         area.setFont(new Font("Consolas", Font.PLAIN, 12));
-        area.setBackground(PURE_BLACK);
+        area.setBackground(PURE_WHITE);
         area.setForeground(TERMINAL_GREEN);
         area.setCaretColor(NEON_GREEN);
         area.setLineWrap(true);
@@ -372,7 +372,7 @@ public class HackerCryptoUI extends JFrame {
     private JScrollPane createTerminalScroll(JTextArea area) {
         JScrollPane scroll = new JScrollPane(area);
         scroll.setBorder(new LineBorder(NEON_GREEN, 1));
-        scroll.getViewport().setBackground(PURE_BLACK);
+        scroll.getViewport().setBackground(PURE_WHITE);
         return scroll;
     }
     
